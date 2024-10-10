@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CS50 Journey</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        /* Header */
+        #header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Container */
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Cards */
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px; /* Reduced margin for horizontal alignment */
+            padding: 20px;
+            width: 200px; /* Set a fixed width for uniformity */
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Card Container for Horizontal Alignment */
+        .card-container {
+            display: flex; /* Use flexbox for horizontal layout */
+            justify-content: center; /* Center the cards */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            margin-top: 20px; /* Add space above the cards */
+        }
+
+        /* Table */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* Footer */
+        #footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            #container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%; /* Adjust width for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <h1>Learn About My CS50 Journey</h1>
+    </div>
+
+    <div id="container">
+        <h2>Course Instructor</h2>
+        <img src="David Malan.jpeg" width="200" alt="David Malan" style="display: block; margin: auto; border-radius: 50%;">
+        
+        <h3>Four Things Learned in the Course</h3>
+        <div class="card-container">
+            <div class="card">Password Management</div>
+            <div class="card">File Security</div>
+            <div class="card">Browsing Security</div>
+            <div class="card">Network Security</div>
+        </div>
+
+        <h3>My Cybersecurity Certificate</h3>
+        <img src="CS50_Cybersecurity.png" width="100%" style="max-width: 600px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);" alt="Cybersecurity Certificate">
+        <a href="Image.html" style="display: inline-block; margin-top: 10px; padding: 10px 15px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">Verify Now</a>
+
+        <h1>Assignments + Final Project Scores</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Assignment No</th>
+                    <th>Scores in the Assignments</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="footer">
+        <p>&copy; 2024 My CS50 Journey</p>
+    </div>
+
+</body>
+</html>
